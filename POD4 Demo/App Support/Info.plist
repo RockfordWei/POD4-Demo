@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>Resources</key>
+	<dict>
+		<key>Colors</key>
+		<dict>
+			<key>NavigationBarBackground</key>
+			<string>#E2F8FF</string>
+		</dict>
+		<key>Strings</key>
+		<dict>
+			<key>ApplicationTitle</key>
+			<string>POD4 Demo</string>
+		</dict>
+	</dict>
+</dict>
 </plist>

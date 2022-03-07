@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "POD4 Demo"
+        navigationItem.title = R.string("ApplicationTitle")
     }
 
 
