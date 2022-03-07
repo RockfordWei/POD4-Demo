@@ -11,8 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Example constant: \(Constants.Network.hostName)")
+        navigationItem.title = "POD4 Demo"
     }
 
 

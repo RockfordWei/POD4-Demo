@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KLG-fT-1VU">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -14,32 +14,69 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="POD4_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="462-EQ-BHB">
-                                <rect key="frame" x="147.5" y="327.5" width="119.5" height="41"/>
-                                <string key="text">Welcome to the
-POD 4 Demo</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmj-Ca-ibr">
+                                <rect key="frame" x="100" y="294" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="IP7-en-y40"/>
+                                    <constraint firstAttribute="width" constant="120" id="syV-ck-fqw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <backgroundConfiguration key="background" image="Blogs"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-Uf-uhP">
+                                <rect key="frame" x="100" y="110" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="cpv-Eq-oEO"/>
+                                    <constraint firstAttribute="width" constant="120" id="n7Y-jz-8o1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <backgroundConfiguration key="background" image="News"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="462-EQ-BHB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="Zj7-CM-7Ie"/>
-                            <constraint firstItem="462-EQ-BHB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wUP-ti-BAA"/>
+                            <constraint firstItem="dAD-Uf-uhP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c3y-9O-3GI"/>
+                            <constraint firstItem="tmj-Ca-ibr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="32" id="gA9-fv-j6K"/>
+                            <constraint firstItem="tmj-Ca-ibr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lRR-BX-Ucw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="dAD-Uf-uhP" secondAttribute="bottom" constant="32" id="uWt-Wp-HbQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aEt-7X-x4S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="117"/>
+            <point key="canvasLocation" x="1128.75" y="116.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4HG-CL-6as">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KLG-fT-1VU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Rv-8x-QaE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aoZ-Qw-5fG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5x7-Dr-pe8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="116.25"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Blogs" width="357.67999267578125" height="361.739990234375"/>
+        <image name="News" width="377.8900146484375" height="377.8900146484375"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
